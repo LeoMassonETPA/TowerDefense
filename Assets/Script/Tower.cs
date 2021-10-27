@@ -15,7 +15,7 @@ public class Tower : MonoBehaviour
 
 private void Start()
     {
-        enemies = new List<Enemy>;
+        enemies = new List<Enemy>();
     }
 
 
@@ -30,8 +30,8 @@ public void Upgrade()
         {
             return;
         }
-        Instantiate(upgrade, transform.position, transform.rotation);
-        Destroy(gameObject);
+        Instantiate (upgrade, transform.position, transform.rotation);
+        Destroy (gameObject);
     }
 private void OnTriggerEnter(Collider other)
     {
