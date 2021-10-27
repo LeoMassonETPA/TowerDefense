@@ -7,10 +7,10 @@ public class Detection : MonoBehaviour
     // Start is called before the first frame update
 
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+       
     }
 
     private Tower towerParent { get; set; } = null;
