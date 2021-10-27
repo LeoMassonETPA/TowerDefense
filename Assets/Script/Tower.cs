@@ -33,21 +33,13 @@ public void Upgrade()
         Instantiate (upgrade, transform.position, transform.rotation);
         Destroy (gameObject);
     }
-private void OnTriggerEnter(Collider other)
+
+    public void AddEnemy(Enemy enemy)
     {
-        Enemy enemy = other.GetComponent<Enemy>();
-        if (enemy == null)
-        {
-            enemies.Add(enemy);
-        }
+        enemies.Add(enemy);
     }
-private void OnTriggerExit(Collider other)
-    { 
-    Enemy enemy = other.GetComponent<Enemy>();
-            if(enemy != null)
-            {
-            enemies.Remove(enemy);
-            }
-    
-}
-}
+    public void RemoveEnemy(Enemy enemy)
+    {
+        enemies.Remove(enemy);
+    }
+    }
